@@ -1,0 +1,347 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Personal Information</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <div class="col-md-10">
+                                        <table class="table table-hover table-light">
+                                            <tbody>
+                                                <tr>
+                                                    <div class="col-md-6">
+                                                        <td width="20%"> First Name </td>
+                                                        <td> <strong>{{applicantcv[0].firstName}} </strong></td>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <td width="20%"> Last Name </td>
+                                                        <td> <strong>{{applicantcv[0].lastName}} </strong></td>
+                                                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <td width="20%"> Objective</td>
+                                                    <td colspan="3"> <strong>{{applicantcv[0].objective}} </strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="fileinput-new thumbnail" style="width: 125px; height: 100px;">
+                                                <img ng-src="data:image/jpeg;base64,{{applicantcv[0].picture}}" id="photo-id" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Acadmic Education</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Degree</th>
+                                                <th>Institute</th>
+                                                <th>Board / University</th>
+                                                <th>Passing Year</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr ng-repeat="education in applicantcv[0].educations">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{education.degree}}</td>
+                                                <td>{{education.institution}}</td>
+                                                <td>{{education.board_University}}</td>
+                                                <td>{{education.yearOfGraduation | date:'dd-MMM-yyyy' }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Experience</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Job Title</th>
+                                                <th>Organization</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="experience in applicantcv[0].experiences">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{experience.jobTitle}}</td>
+                                                <td>{{experience.organization}}</td>
+                                                <td>{{experience.startDate | date: 'dd-MMM-yyyy'}}</td>
+                                                <td>{{experience.endDate | date: 'dd-MMM-yyyy'}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Publications</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Publication Title</th>
+                                                <th>Publication Date</th>
+                                                <th>Description</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="publication in applicantcv[0].publications">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{publication.pTitle}}</td>
+                                                <td>{{publication.pdate | date: 'dd-MMM-yyyy'}}</td>
+                                                <td>{{publication.description}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Trainings</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Training Title</th>
+                                                <th>Provider</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Description</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="training in applicantcv[0].trainings">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{training.trainingTitle}}</td>
+                                                <td>{{training.provider}}</td>
+                                                <td>{{training.startDate | date: 'dd-MMM-yyyy'}}</td>
+                                                <td>{{training.endDate | date: 'dd-MMM-yyyy'}}</td>
+                                                <td>{{training.description}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Memberships</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Association</th>
+                                                <th>Role Title</th>
+                                                <th>Member Since</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="membership in applicantcv[0].memberships">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{membership.association}}</td>
+                                                <td>{{membership.title_Role}}</td>
+                                                <td>{{membership.memberSince | date: 'dd-MMM-yyyy'}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">Languages</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Language</th>
+                                                <th>Read</th>
+                                                <th>Write</th>
+                                                <th>Speak</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="language in applicantcv[0].languages">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{language.language}}</td>
+                                                <td>
+                                                    <div class="md-checkbox">
+                                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.read">
+                                                        <label for="read">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="md-checkbox">
+                                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.write">
+                                                        <label for="read">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="md-checkbox">
+                                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.speak">
+                                                        <label for="read">
+                                                            <span></span>
+                                                            <span class="check"></span>
+                                                            <span class="box"></span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portlet light portlet-fit bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="icon-settings font-red"></i>
+                                    <span class="caption-subject font-red sbold uppercase">References</span>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable table-scrollable-borderless">
+                                    <table class="table table-hover table-light">
+                                        <thead>
+                                            <tr>
+                                                <th>S#</th>
+                                                <th>Name</th>
+                                                <th>Organization</th>
+                                                <th>Position</th>
+                                                <th>Relation</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="reference in applicantcv[0].references">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{reference.name}}</td>
+                                                <td>{{reference.organization}}</td>
+                                                <td>{{reference.refPosition}}</td>
+                                                <td>{{reference.relation}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

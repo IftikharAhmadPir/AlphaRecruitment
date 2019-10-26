@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<title ng-bind="title">@(PageData["title"] ?? "AngularJS SPA Template for Visual Studio")</title>-->
+    <!--<meta name="description" content="@PageData["description"]">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ORS</title>
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">-->
+    <link href="content/slider/css/style-revolution-slider.css" rel="stylesheet" />
+    <link href="content/slider/css/settings.css" rel="stylesheet" />
+
+    <link href="content/css/bootstrap-switch.min.css" rel="stylesheet" />
+    <link href="content/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/components-md.min.css" rel="stylesheet" />
+    <link href="content/css/simple-line-icons/simple-line-icons.css" rel="stylesheet" />
+    <link href="content/css/layout.min.css" rel="stylesheet" />
+    <link href="content/css/light.min.css" rel="stylesheet" />
+    <link href="content/css/plugins-md.min.css" rel="stylesheet" />
+    <link href="content/css/uniform.default.css" rel="stylesheet" />
+    <link href="content/css/loading-bar.css" rel="stylesheet" />
+    <link href="scripts/pnotify.min.css" rel="stylesheet" />
+    <link href="content/css/select.min.css" rel="stylesheet" />
+
+    <link id="ng_load_css_before" />
+</head>
+<body ng-controller="AppController" class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-sidebar-closed-hide-logo page-footer-fixed page-sidebar-fixed" ng-class="{'page-sidebar-closed': settings.layout.pageSidebarClosed}">
+    <div ng-spinner-bar class="page-spinner-bar">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+
+    <div data-ng-include="'app/views/tpl/header.html'" data-ng-controller="HeaderController" class="page-header navbar navbar-fixed-top"> </div>
+    
+    <div ui-view="MainView" class="page-container fade-in-up" ng-cloak></div>
+
+    <div data-ng-include="'app/views/tpl/footer.html'" data-ng-controller="FooterController" class="page-footer"> </div>
+
+    <!--app core libraries-->
+    <script src="scripts/corejs/jquery.min1.js"></script>
+    <script src="scripts/corejs/jquery-migrate.min.js"></script>
+    <script src="scripts/corejs/browser-support.js"></script>
+    <script src="scripts/corejs/bootstrap.min.js"></script>
+    <script src="scripts/corejs/bootstrap-hover-dropdown.min.js"></script>
+    <script src="Scripts/corejs/bootstrap-switch.min.js"></script>
+    <script src="scripts/corejs/jquery.blockui.min.js"></script>
+    <script src="scripts/corejs/jquery.slimscroll.min.js"></script>
+    <script src="scripts/corejs/jquery.uniform.min.js"></script>
+    <script src="scripts/corejs/jquery.cookie.min.js"></script>
+    <script src="scripts/corejs/layout.min.js"></script>
+    <script src="Scripts/corejs/quick-sidebar.min.js"></script>
+    <script src="scripts/corejs/analytics.js"></script>
+    <script src="scripts/pnotify.min.js"></script>
+
+
+
+    <script src="content/slider/js/revo-slider-init.js"></script>
+    <script src="content/slider/js/jquery.fancybox.pack.js"></script>
+    <script src="content/slider/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="content/slider/js/jquery.themepunch.revolution.js"></script>
+    <script src="content/slider/js/jquery.themepunch.tools.min.js"></script>
+    <!--<script src="content/slider/js/layout.js"></script>-->
+    <script src="content/slider/js/owl.carousel.min.js"></script>
+
+
+    <!--<script src="scripts/corejs/demo.js"></script>-->
+    <!--Angularjs Libraries-->
+
+    <script src="scripts/angularjs/angular.min.js"></script>
+    <script src="scripts/angularjs/angular-sanitize.min.js"></script>
+    <script src="scripts/angularjs/angular-touch.min.js"></script>
+    <script src="scripts/angularjs/angular-ui-router.min.js"></script>
+    <script src="scripts/angularjs/ocLazyLoad.min.js"></script>
+    <script src="scripts/angularjs/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/mask.min.js"></script>
+    <script src="scripts/angular-pnotify.js"></script>
+    <script src="scripts/loading-bar.js"></script>
+    <!--UI-Select-->
+    <script src="scripts/select.min.js"></script>
+    <!-- Used for external logins -->
+    <!--<script src="scripts/corejs/authComplete.js"></script>-->
+    <!-- App level libraries -->
+    <script src="app/app.js"></script>
+    <script src="app/directives.js"></script>
+
+    <!-- Load Services -->
+    <script src="app/services/angular-local-storage.min.js"></script>
+    <script src="app/services/authInterceptorService.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/tokensManagerService.js"></script>
+    <script src="app/services/cookieService.js"></script>
+
+    <script src="app/services/employerService.js"></script>
+    <script src="app/services/applicantService.js"></script>
+    <script src="app/services/catalogueService.js"></script>
+    <script src="app/services/validationService.js"></script>
+
+    <link id="ng_load_service_before" />
+    <!-- Load controllers -->
+    <script src="app/controllers/indexController.js?v=2"></script>
+    <script src="app/controllers/homeController.js?v=2"></script>
+    <script src="app/controllers/refreshController.js?v=2"></script>
+    <script src="app/controllers/tokensManagerController.js?v=2"></script>
+    <script src="app/controllers/associateController.js?v=2"></script>
+    <script src="app/controllers/EmployerController.js"></script>
+    <link id="ng_load_controller_before" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'scripts/corejs/analytics.js', 'ga');
+        ga('create', '@WebConfigurationManager.AppSettings["GoogleAnalytics:PropertyID"]', '@(Request.IsLocal ? "none" : "auto")');
+    </script>
+</body>
+
+</html>

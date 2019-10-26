@@ -1,0 +1,46 @@
+﻿<div class="row">
+
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">References</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.addreference">Add</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <table class="table table-hover table-light">
+                        <thead>
+                            <tr>
+                                <th>S#</th>
+                                <th>Name</th>
+                                <th>Organization</th>
+                                <th>Position</th>
+                                <th>Relation</th>
+                                <th>Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="reference in referenceinfo">
+                                <td>{{$index+1}}</td>
+                                <td>{{reference.name}}</td>
+                                <td>{{reference.organization}}</td>
+                                <td>{{reference.refPosition}}</td>
+                                <td>{{reference.relation}}</td>
+                                <td>
+                                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.editreference({id: reference.id})">Edit</a>
+                                    <a class="btn btn-primary btn-xs" ng-click="delreference(reference.id)">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

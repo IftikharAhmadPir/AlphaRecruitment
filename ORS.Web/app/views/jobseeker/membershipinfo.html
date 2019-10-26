@@ -1,0 +1,44 @@
+﻿<div class="row">
+
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">Memberships</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.addmembership">Add</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <table class="table table-hover table-light">
+                        <thead>
+                            <tr>
+                                <th>S#</th>
+                                <th>Association</th>
+                                <th>Role Title</th>
+                                <th>Member Since</th>
+                                <th>Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="membership in membershipinfo">
+                                <td>{{$index+1}}</td>
+                                <td>{{membership.association}}</td>
+                                <td>{{membership.title_Role}}</td>
+                                <td>{{membership.memberSince | date: 'dd-MMM-yyyy'}}</td>
+                                <td>
+                                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.editmembership({id: membership.id})">Edit</a>
+                                    <a class="btn btn-primary btn-xs" ng-click="delmembership(membership.id)">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+</div>

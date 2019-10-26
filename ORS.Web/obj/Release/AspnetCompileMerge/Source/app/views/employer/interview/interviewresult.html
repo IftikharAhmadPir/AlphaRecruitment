@@ -1,0 +1,39 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Add Interview Results</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="objective">Type</label>
+                        <select type="radio" id="objective" class="form-control" ng-model="interviewskill.type">
+                            <option value="">Select Type</option>
+                            <option value="1">Technical Skills</option>
+                            <option value="2">Social Skill</option>
+                            <option value="3">Intelligence</option>
+                            <option value="4">General Knowledge</option>
+                            <option value="5">Dressing</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="score">Score</label>
+                        <input id="score" class="form-control" ng-model="interviewskill.score" />
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="objective">Description</label>
+                        <textarea id="objective" class="form-control" ng-model="interviewskill.description"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>   

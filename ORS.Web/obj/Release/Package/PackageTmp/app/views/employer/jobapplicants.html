@@ -1,0 +1,49 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-dark">
+                    <i class="icon-settings font-dark"></i>
+                    <span class="caption-subject bold uppercase">Job Applicants</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <input type="text" ng-model="search" class="form-control" placeholder="Search for Required Job" />
+                <table class="table table-striped table-bordered table-hover table-header-fixed" id="appslist">
+                    <thead>
+                        <tr>
+                            <th style="width:1%">S No.</th>
+                            <th style="width:20%">Applicant Name</th>
+                            <th style="width:5%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="applicant in applicants | filter: search">
+                            <td>{{$index+1}}</td>
+                            <td><strong>{{applicant.applicantName}}</strong>
+                            <td>
+                                <a class="btn btn-xs" ng-click="getapplicantscv(applicant.id)">
+                                    ViewCV
+                                    <i class="icon-arrow-right font-blue"></i>
+                                </a>
+                                <a ng-show="applicant.shortlisted<1" class="btn btn-xs" ng-click="shortList(applicant.appId)">
+                                    ShortList
+                                    <i class="icon-arrow-right font-blue"></i>
+                                </a>
+
+
+                                <a ng-show="applicant.shortlisted>0" class="btn btn-xs" ui-sref="cdashboard.shortlistedapps.jobapplicants.interview({id: applicant.appId})">
+                                    Call For InterView
+                                    <i class="icon-arrow-right font-blue"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ui-view="viewcv" class="fade-in-up"></div>

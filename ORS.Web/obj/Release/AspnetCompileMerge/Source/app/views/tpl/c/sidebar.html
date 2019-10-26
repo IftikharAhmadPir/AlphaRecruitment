@@ -1,0 +1,147 @@
+<div class="page-sidebar-wrapper" data-ng-controller="indexController">
+    <!-- BEGIN SIDEBAR -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+        <ul class="page-sidebar-menu   " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            <li class="nav-item  start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Company Dashboard</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item start ">
+                        <a ui-sref="cdashboard.home" class="nav-link ">
+                            <i class="icon-user"></i>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.empdata" class="nav-link ">
+                            <span class="title">Company Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">Jobs</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.postjob" class="nav-link ">
+                            <span class="title">Post jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.empjobslist" class="nav-link ">
+                            <span class="title">Jobs Lists</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">Applications</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.receivedapps" class="nav-link ">
+                            <span class="title">Applications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.shortlistedapps" class="nav-link ">
+                            <span class="title">Shortlisted Applications</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">Interviews</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.pendinginterviewsapps" class="nav-link ">
+                            <span class="title">Interviews</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">Internship</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.pendinginterviewsapps" class="nav-link ">
+                            <span class="title">Waiting For Internship</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">General</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a ui-sref="cdashboard.changepassword" class="nav-link ">
+                            <span class="title">Change Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-ng-click="logOut()">
+                            <i class="icon-key"></i> Log Out
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-social-dribbble"></i>
+                    <span class="title">Mail</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a href="#" class="nav-link ">
+                            <span class="title">Inbox</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="#" class="nav-link ">
+                            <span class="title">OutBox</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+</div>

@@ -1,0 +1,60 @@
+﻿    <h2>Countries</h2>
+        <div class="form-horizontal">
+            <ul id="validationSummary"></ul>
+            Are you sure that you want to delete {{Countries}}?
+
+    
+            <div class="form-group">
+                <label for="countryname" class = "control-label col-md-2">
+                Name
+                </label>
+                <div class="col-md-10">
+                    {{country.countryname}}
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="countrycode" class = "control-label col-md-2">
+                countrycode
+                </label>
+                <div class="col-md-10">
+                    {{country.countrycode}}
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="subscriber" class = "control-label col-md-2">
+                subscriber
+                </label>
+                <div class="col-md-10">
+                    {{country.subscriber}}
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="nationality" class = "control-label col-md-2">
+                nationality
+                </label>
+                <div class="col-md-10">
+                    {{country.nationality}}
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="currency" class = "control-label col-md-2">
+                currency
+                </label>
+                <div class="col-md-10">
+                    {{country.currency}}
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" ng-click="save()" />
+                </div>
+            </div>
+        </div>
+    
+    <div>
+        <a ui-sref="cdashboard.countries">Back to List</a>    </div>

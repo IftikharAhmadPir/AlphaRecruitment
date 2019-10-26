@@ -1,0 +1,56 @@
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\ORS.ResourceServer.dll.config
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\ORS.ResourceServer.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\ORS.ResourceServer.pdb
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Cors.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Security.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Security.OAuth.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Newtonsoft.Json.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Owin.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Net.Http.Formatting.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Cors.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.Owin.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.WebHost.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Cors.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Security.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Microsoft.Owin.Security.OAuth.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\Newtonsoft.Json.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Net.Http.Formatting.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.Owin.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\bin\System.Web.Http.WebHost.xml
+D:\FYP\TokenBasedORS\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.csprojResolveAssemblyReference.cache
+D:\FYP\TokenBasedORS\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.dll
+D:\FYP\TokenBasedORS\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.pdb
+E:\R. System\Final Project\ORS.ResourceServer\bin\ORS.ResourceServer.dll.config
+E:\R. System\Final Project\ORS.ResourceServer\bin\ORS.ResourceServer.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\ORS.ResourceServer.pdb
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Cors.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Security.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Security.OAuth.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Newtonsoft.Json.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Owin.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Net.Http.Formatting.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Cors.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.Owin.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.WebHost.dll
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Cors.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Security.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\Microsoft.Owin.Security.OAuth.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\Newtonsoft.Json.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Net.Http.Formatting.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.Owin.xml
+E:\R. System\Final Project\ORS.ResourceServer\bin\System.Web.Http.WebHost.xml
+E:\R. System\Final Project\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.csprojResolveAssemblyReference.cache
+E:\R. System\Final Project\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.dll
+E:\R. System\Final Project\ORS.ResourceServer\obj\Debug\ORS.ResourceServer.pdb

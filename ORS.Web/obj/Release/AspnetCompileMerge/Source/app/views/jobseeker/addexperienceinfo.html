@@ -1,0 +1,68 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Experience Information</span>
+            <!--<span class="caption-helper">enter/update employer information</span>-->
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="jobtitle">Job Title</label>
+                        <input type="text" id="jobtitle" class="form-control" ng-model="experienceinfo.jobTitle" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="organization">Organization</label>
+                        <input type="text" id="organization" class="form-control" ng-model="experienceinfo.organization" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="degree">Duties / Responsibilities</label>
+                        <textarea type="text" id="degree" class="form-control" ng-model="experienceinfo.duties_Responsibilities"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label for="lastname">Start Date</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" ng-model="experienceinfo.startDate" uib-datepicker-popup="ddMMyyyy" is-open="popupcd.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="opencd()"><i class="icon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for="lastname">End Date</label>
+                            <p class="input-group">
+                                <input type="text" class="form-control" ng-model="experienceinfo.endDate" uib-datepicker-popup="ddMMyyyy" is-open="popuped.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" ng-click="opened()"><i class="icon-calendar"></i></button>
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2 col-md-offset-4">
+                            <a class="btn btn-primary" ng-click="save()">Save</a>
+                        </div>
+                        <div class="col-md-1">
+                            <a class=" btn btn-danger" ui-sref="jdashboard.profile">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </form>
+    </div>
+</div>   

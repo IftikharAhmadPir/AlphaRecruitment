@@ -1,0 +1,135 @@
+﻿
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Employer Information</span>
+            <span class="caption-helper">enter/update employer information</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="orgname">Organization Name</label>
+                        <input id="orgname" class="form-control" type="text" ng-model="employer.organization" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="orgtype">Organization Type</label>
+                                <input id="orgtype" class="form-control" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="orgcountry">Organization Country</label>
+                                <ui-select ng-model="selected.value">
+                                    <ui-select-match>
+                                        <span ng-bind="$select.selected.countryName"></span>
+                                    </ui-select-match>
+                                    <ui-select-choices repeat="item in (itemArray | filter: $select.search) track by item.id">
+                                        <span ng-bind="item.countryName"></span>
+                                    </ui-select-choices>
+                                </ui-select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="missionStatement">Mission Statement</label>
+                        <textarea id="missionStatement" class="form-control" ng-model="employer.missionStatement"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="pobox">PO Box Number</label>
+                                <input id="pobox" class="form-control" type="text" ng-model="employer.poBox" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="zipcode">Zip Code</label>
+                                <input id="zipcode" class="form-control" type="text" ng-model="employer.zip_Postal" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input id="city" class="form-control" type="text" ng-model="employer.city" />
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="website">Web Site</label>
+                                <input id="website" class="form-control" type="text" ng-model="employer.website" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="contactperson">Contact Person</label>
+                                <input id="contactperson" class="form-control" type="text" ng-model="employer.contactPerson" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="jobtitle">Job Title (Contact Person)</label>
+                                <input id="jobtitle" class="form-control" type="text" ng-model="employer.jobTitle" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="email">Email (Contact Person)</label>
+                                <input id="email" class="form-control" type="text" ng-model="employer.personEmail" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="phoneno">Phone Number</label>
+                                <input id="phoneno" class="form-control" type="text" ng-model="employer.telephone" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="faxno">Fax Number</label>
+                                <input id="faxno" class="form-control" type="text" ng-model="employer.fax" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="extention">Extension</label>
+                                <input id="extention" class="form-control" type="text" ng-model="employer.extension" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="mobileno">Mobile Number</label>
+                                <input id="mobileno" class="form-control" type="text" ng-model="employer.mobile" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 col-md-offset-5">
+                        <a class="btn btn-primary" ng-click="save()">Save</a>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

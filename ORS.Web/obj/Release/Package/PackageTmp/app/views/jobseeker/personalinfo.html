@@ -1,0 +1,81 @@
+﻿<div class="row">
+
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">Personal Information</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.addpersonal">Edit</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <div class="col-md-9">
+
+                        <table class="table table-hover table-light">
+                            <tbody>
+
+                                <tr>
+                                    <div class="col-md-4">
+                                        <td width="20%"> First Name </td>
+                                        <td> <strong>{{displaypersonalinfo.firstName}} </strong></td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td width="20%"> Last Name </td>
+                                        <td> <strong>{{displaypersonalinfo.lastName}} </strong></td>
+                                    </div>
+
+                                    <td colspan="2">
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="WaitingForInternship" class="md-check" ng-disabled="true" ng-model="displaypersonalinfo.waitingForInternship">
+                                            <label for="WaitingForInternship">
+                                                <span></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>Waiting For Internship
+                                            </label>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <div class="col-md-4">
+                                        <td width="20%"> Gender </td>
+                                        <td> <strong>{{displaypersonalinfo.gender}} </strong></td>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <td width="20%"> Marital Status </td>
+                                        <td> <strong>{{displaypersonalinfo.mstatus}} </strong></td>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <td width="20%"> Phone Number </td>
+                                        <td> <strong>{{displaypersonalinfo.phoneNumber}} </strong></td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td width="20%"> Objective</td>
+                                    <td colspan="5" style="text-align-last:justify"> {{displaypersonalinfo.objective}} </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%"> Mailing Address</td>
+                                    <td colspan="5" style="text-align-last:justify"> {{displaypersonalinfo.mailAddress}} </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="fileinput-new thumbnail" style="width: 150px; height: 180px;">
+                            <img ng-src="data:image/jpeg;base64,{{displaypersonalinfo.picture}}" id="photo-id" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

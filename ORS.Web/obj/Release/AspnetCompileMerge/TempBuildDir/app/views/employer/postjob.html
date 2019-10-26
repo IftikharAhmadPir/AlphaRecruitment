@@ -1,0 +1,106 @@
+﻿
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-red-sunglo bold uppercase">Job Information</span>
+                    <span class="caption-helper">enter/update Job information</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+
+                <form name="theForm">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <label for="jobtitle">Job Title</label>
+                                        <input id="jobtitle" class="form-control" type="text" ng-model="job.jobTitle" autofocus="autofocus" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="pay">Pay</label>
+                                        <input id="pay" class="form-control" type="text" ng-model="job.pay" />
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input id="city" class="form-control" type="text" ng-model="job.city" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="lastname">Opening Date</label>
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" ng-model="job.dateOpening" uib-datepicker-popup="ddMMyyyy" is-open="popupcd.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default" ng-click="opencd()"><i class="icon-calendar"></i></button>
+                                            </span>
+                                        </p>
+
+                                        <!--<label for="openingdate">Opening Date</label>
+                                        <input id="openingdate" class="form-control" type="text" ng-model="job.datePosted" />-->
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label for="lastname">Closing Date</label>
+                                        <p class="input-group">
+                                            <input type="text" class="form-control" ng-model="job.dateClosing" uib-datepicker-popup="ddMMyyyy" is-open="popuped.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default" ng-click="opened()"><i class="icon-calendar"></i></button>
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="contactinfo">Contact Information</label>
+                                        <input id="contactinfo" class="form-control" type="text" ng-model="job.contactInfo" />
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label for="requirements">Requirements</label>
+                                <textarea id="requirements" class="form-control" ng-model="job.requirements"></textarea>
+                            </div>
+                            </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label for="summary">Summary</label>
+                                <textarea id="summary" class="form-control" ng-model="job.summary"></textarea>
+                            </div>
+                            </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label for="description">Description</label>
+                                <textarea id="description" class="form-control" ng-model="job.description"></textarea>
+                            </div>
+                            </div>
+                        <div class="form-group">
+                            <div class="col-md-2 col-md-offset-4">
+                                <a class="btn btn-primary" ng-click="save()">Post Job</a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="btn btn-danger" ui-sref="cdashboard.empjobslist">Cancel</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>

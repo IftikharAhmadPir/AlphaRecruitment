@@ -1,0 +1,190 @@
+D:\FYP\TokenBasedORS\ORS.API\bin\ORS.API.dll.config
+D:\FYP\TokenBasedORS\ORS.API\bin\ORS.API.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ORS.API.pdb
+D:\FYP\TokenBasedORS\ORS.API\bin\AutoMapper.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\EntityFramework.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\EntityFramework.SqlServer.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.Core.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Data.Edm.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Data.OData.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Cors.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Cookies.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Facebook.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Google.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.OAuth.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Newtonsoft.Json.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\Owin.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\RazorEngine.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\SendGrid.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\SendGrid.SmtpApi.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\SendGridMail.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Net.Http.Formatting.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Spatial.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Cors.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.Cors.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.OData.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.Owin.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.WebHost.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Razor.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\AutoMapper.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\EntityFramework.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\EntityFramework.SqlServer.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.Core.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Data.Edm.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Data.OData.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Cors.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Cookies.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Facebook.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.Google.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Microsoft.Owin.Security.OAuth.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\Newtonsoft.Json.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\RazorEngine.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Net.Http.Formatting.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Spatial.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.Cors.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.OData.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.Owin.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Http.WebHost.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\System.Web.Razor.xml
+D:\FYP\TokenBasedORS\ORS.API\bin\de\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\es\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\it\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\de\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\es\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\fr\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\it\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ja\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ko\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ru\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\de\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\es\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\fr\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\it\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ja\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ko\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\ru\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hans\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\bin\zh-Hant\System.Spatial.resources.dll
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.csprojResolveAssemblyReference.cache
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.Migrations.initial.resources
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.Migrations.second.resources
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.Migrations.third.resources
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.Migrations.mailingaddress.resources
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.csproj.GenerateResource.Cache
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.dll
+D:\FYP\TokenBasedORS\ORS.API\obj\Debug\ORS.API.pdb
+E:\R. System\Final Project\ORS.API\bin\ORS.API.dll.config
+E:\R. System\Final Project\ORS.API\bin\ORS.API.dll
+E:\R. System\Final Project\ORS.API\bin\ORS.API.pdb
+E:\R. System\Final Project\ORS.API\bin\AutoMapper.dll
+E:\R. System\Final Project\ORS.API\bin\EntityFramework.dll
+E:\R. System\Final Project\ORS.API\bin\EntityFramework.SqlServer.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Data.Edm.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Data.OData.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Cors.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Facebook.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Google.dll
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\R. System\Final Project\ORS.API\bin\Newtonsoft.Json.dll
+E:\R. System\Final Project\ORS.API\bin\Owin.dll
+E:\R. System\Final Project\ORS.API\bin\RazorEngine.dll
+E:\R. System\Final Project\ORS.API\bin\SendGrid.dll
+E:\R. System\Final Project\ORS.API\bin\SendGrid.SmtpApi.dll
+E:\R. System\Final Project\ORS.API\bin\SendGridMail.dll
+E:\R. System\Final Project\ORS.API\bin\System.Net.Http.Formatting.dll
+E:\R. System\Final Project\ORS.API\bin\System.Spatial.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Cors.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.Cors.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.OData.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.Owin.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.WebHost.dll
+E:\R. System\Final Project\ORS.API\bin\System.Web.Razor.dll
+E:\R. System\Final Project\ORS.API\bin\AutoMapper.xml
+E:\R. System\Final Project\ORS.API\bin\EntityFramework.xml
+E:\R. System\Final Project\ORS.API\bin\EntityFramework.SqlServer.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Data.Edm.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Data.OData.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Cors.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Facebook.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.Google.xml
+E:\R. System\Final Project\ORS.API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\R. System\Final Project\ORS.API\bin\Newtonsoft.Json.xml
+E:\R. System\Final Project\ORS.API\bin\RazorEngine.xml
+E:\R. System\Final Project\ORS.API\bin\System.Net.Http.Formatting.xml
+E:\R. System\Final Project\ORS.API\bin\System.Spatial.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.Cors.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.OData.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.Owin.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Http.WebHost.xml
+E:\R. System\Final Project\ORS.API\bin\System.Web.Razor.xml
+E:\R. System\Final Project\ORS.API\bin\de\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\es\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\it\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\R. System\Final Project\ORS.API\bin\de\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\es\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\fr\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\it\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ja\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ko\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ru\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\R. System\Final Project\ORS.API\bin\de\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\es\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\fr\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\it\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ja\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ko\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\ru\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hans\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\bin\zh-Hant\System.Spatial.resources.dll
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.csprojResolveAssemblyReference.cache
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.Migrations.initial.resources
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.Migrations.second.resources
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.Migrations.third.resources
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.Migrations.mailingaddress.resources
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.csproj.GenerateResource.Cache
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.dll
+E:\R. System\Final Project\ORS.API\obj\Debug\ORS.API.pdb

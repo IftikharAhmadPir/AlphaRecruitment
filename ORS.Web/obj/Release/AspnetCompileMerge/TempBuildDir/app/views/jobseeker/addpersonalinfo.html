@@ -1,0 +1,117 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Personal Information</span>
+            <!--<span class="caption-helper">enter/update employer information</span>-->
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+                <div class="col-md-9">
+                    
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" class="form-control" ng-model="personalinfo.firstName" />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" class="form-control" ng-model="personalinfo.lastName" />
+                        </div>
+                        <div class="col-md-4" style="padding-top:30px">
+                            <div class="md-checkbox">
+                                <input type="checkbox" id="waitingForInternship" class="md-check" ng-model="personalinfo.waitingForInternship">
+                                <label for="waitingForInternship">
+                                    <span></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span> Waiting To Get Internship
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <label for="gender">Gender</label>
+                            <Select
+                            <select type="text" id="gender" class="form-control" ng-model="personalinfo.gender" >
+
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="maritalstatus">Marital Status</label>
+                            <select type="text" id="maritalstatus" class="form-control" ng-model="personalinfo.mstatus">
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="text" id="phonenumber" class="form-control" ng-model="personalinfo.phoneNumber" />
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="objective">Objective</label>
+                            <textarea id="objective" class="form-control" ng-model="personalinfo.objective"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="mailaddress">Complete Mailing Address</label>
+                            <textarea id="mailaddress" class="form-control" ng-model="personalinfo.mailAddress"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                    <img ng-src="data:image/jpeg;base64,{{personalinfo.picture}}" id="photo-id" />
+
+                                    <!--<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />-->
+                                </div>
+                                <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                <div>
+                                    <span class="btn default btn-file">
+                                        <span class="fileinput-new"> Select image </span>
+                                        <span class="fileinput-exists"> Change </span>
+                                        <input type="file" name="file" onchange="angular.element(this).scope().uploadFile(this)" id="photo-upload" />
+                                    </span>
+                                    <a href="#" class="btn default fileinput-exists" data-dismiss="fileinput"> Remove </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 col-md-offset-4">
+                        <a class="btn btn-primary" ng-click="save()">Save</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class=" btn btn-danger" ui-sref="jdashboard.profile">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+     <link href="../../../content/css/bootstrap-fileinput.css" rel="stylesheet" />
+    <script src="../../../scripts/bootstrap-fileinput.js"></script>
+
+</div>   

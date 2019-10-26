@@ -1,0 +1,42 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-dark">
+                    <i class="icon-settings font-dark"></i>
+                    <span class="caption-subject bold uppercase">Interviews Details</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <input type="text" ng-model="search" class="form-control" placeholder="Search for Required Job" />
+                <table class="table table-striped table-bordered table-hover table-header-fixed" id="appslist">
+                    <thead>
+                        <tr>
+                            <th style="width:5%">S No.</th>
+                            <th style="width:20%">Job Title</th>
+                            <th style="width:20%">Organization</th>
+                            <th style="width:10%">Applied Date</th>
+                            <th style="width:10%">Interview Date</th>
+                            <th style="width:10%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="app in appinfo | filter: search">
+                            <td>{{$index+1}}</td>
+                            <td><strong>{{app.jobTitle}}</strong>
+                            <td>{{app.organization == null? "Undefined": app.organization}}</td>
+                            <td>{{app.dateApplied | date:'dd-MMM-yyyy'}}</td>
+                            <td>{{app.interviewDate | date:'dd-MMM-yyyy'}}</td>
+                            <td>
+                                <a ng-hide="(app.interviewDate | date:'dd-MMM-yyyy') > (currentdate | date:'dd-MMM-yyyy')" class="btn btn-xs" ng-click="newPopup(app.link)">Start Insterview </a>
+                                <div ng-show="(app.interviewDate | date:'dd-MMM-yyyy') > (currentdate | date:'dd-MMM-yyyy')">
+                                    <button ng-disabled="true" class="btn btn-xs">Waiting.... </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

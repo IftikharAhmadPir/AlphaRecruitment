@@ -1,0 +1,65 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Language Information</span>
+            <!--<span class="caption-helper">enter/update employer information</span>-->
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <p class="input-group">
+                        <div class="col-md-6">
+                            <input type="text" id="language" class="form-control" placeholder="Language" ng-model="languageinfo.language" />
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="md-checkbox">
+                                <input type="checkbox" id="read" class="md-check" ng-model="languageinfo.read">
+                                <label for="read">
+                                    <span></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span> Read
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="md-checkbox">
+                                <input type="checkbox" id="write" class="md-check" ng-model="languageinfo.write">
+                                <label for="write">
+                                    <span></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span> Write
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="md-checkbox">
+                                <input type="checkbox" id="speak" class="md-check" ng-model="languageinfo.speak">
+                                <label for="speak">
+                                    <span></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span> Speak
+                                </label>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 col-md-offset-4">
+                        <a class="btn btn-primary" ng-click="save()">Save</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class=" btn btn-danger" ui-sref="jdashboard.profile">
+                            Cancel
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>   

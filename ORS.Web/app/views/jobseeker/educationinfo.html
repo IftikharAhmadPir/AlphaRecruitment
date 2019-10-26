@@ -1,0 +1,46 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">Acadmic Education</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.addeducation">Add</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <table class="table table-hover table-light">
+                        <thead>
+                            <tr>
+                                <th>S#</th>
+                                <th>Degree</th>
+                                <th>Institute</th>
+                                <th>Board / University</th>
+                                <th>Passing Year</th>
+                                <th width="13%">Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr ng-repeat="education in educationinfo">
+                                <td>{{$index+1}}</td>
+                                <td>{{education.degree}}</td>
+                                <td>{{education.institution}}</td>
+                                <td>{{education.board_University}}</td>
+                                <td>{{education.yearOfGraduation | date:'dd-MMM-yyyy' }}</td>
+                                <td>
+                                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.editeducation({id: education.id})">Edit</a>
+                                    <a class="btn btn-primary btn-xs" ng-click="deleducation(education.id)">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

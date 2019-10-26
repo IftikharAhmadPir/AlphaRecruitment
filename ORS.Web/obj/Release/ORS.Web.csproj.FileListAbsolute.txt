@@ -1,0 +1,5 @@
+D:\FYP\TokenBasedORS\ORS.Web\bin\ORS.Web.dll.config
+D:\FYP\TokenBasedORS\ORS.Web\bin\ORS.Web.dll
+D:\FYP\TokenBasedORS\ORS.Web\bin\ORS.Web.pdb
+D:\FYP\TokenBasedORS\ORS.Web\obj\Release\ORS.Web.dll
+D:\FYP\TokenBasedORS\ORS.Web\obj\Release\ORS.Web.pdb

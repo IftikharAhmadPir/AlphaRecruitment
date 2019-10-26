@@ -1,0 +1,73 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-settings font-red"></i>
+                    <span class="caption-subject font-red sbold uppercase">Languages</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.addlanguage">Add</a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable table-scrollable-borderless">
+                    <table class="table table-hover table-light">
+                        <thead>
+                            <tr>
+                                <th>S#</th>
+                                <th>Language</th>
+                                <th>Read</th>
+                                <th>Write</th>
+                                <th>Speak</th>
+                                <th>Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="language in languageinfo">
+                                <td>{{$index+1}}</td>
+                                <td>{{language.language}}</td>
+                                <td>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.read">
+                                        <label for="read">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.write">
+                                        <label for="read">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" id="read" class="md-check" ng-disabled="true" ng-model="language.speak">
+                                        <label for="read">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <a class="btn btn-primary btn-xs" ui-sref="jdashboard.editlanguage({id: language.id})">Edit</a>
+                                    <a class="btn btn-primary btn-xs" ng-click="dellanguage(language.id)">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

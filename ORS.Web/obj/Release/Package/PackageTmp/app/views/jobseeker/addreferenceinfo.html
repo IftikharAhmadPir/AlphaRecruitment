@@ -1,0 +1,62 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Reference Information</span>
+            <!--<span class="caption-helper">enter/update employer information</span>-->
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" ng-model="referenceinfo.name" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="organization">Organization</label>
+                        <input type="text" id="organization" class="form-control" ng-model="referenceinfo.organization" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="refPosition">Position</label>
+                        <input type="text" id="refPosition" class="form-control" ng-model="referenceinfo.refPosition" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="telephone">Telephone</label>
+                        <input type="text" id="telephone" class="form-control" ng-model="referenceinfo.telephone" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="form-control" ng-model="referenceinfo.email" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="relation">Relation</label>
+                        <input type="text" id="relation" class="form-control" ng-model="referenceinfo.relation" />
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-2 col-md-offset-4">
+                        <a class="btn btn-primary" ng-click="save()">Save</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a class=" btn btn-danger" ui-sref="jdashboard.profile">
+                            Cancel
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>   

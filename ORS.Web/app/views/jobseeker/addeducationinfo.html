@@ -1,0 +1,83 @@
+﻿<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject font-red-sunglo bold uppercase">Education Information</span>
+            <!--<span class="caption-helper">enter/update employer information</span>-->
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="theForm">
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="degree">Degree / Level</label>
+                        <input type="text" id="degree" class="form-control" ng-model="educationinfo.degree" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="lastname">Field</label>
+                        <input type="text" id="lastname" class="form-control" ng-model="educationinfo.field" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="degree">Institution</label>
+                        <input type="text" id="degree" class="form-control" ng-model="educationinfo.institution" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="lastname">Board / University</label>
+                        <input type="text" id="lastname" class="form-control" ng-model="educationinfo.board_University" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div ng-hide="notcompleted" class="col-md-3">
+                        <label for="lastname">Completion Date</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="ddMMyyyy" ng-model="educationinfo.yearOfGraduation" is-open="popupcd.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="opencd()"><i class="icon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div ng-show="notcompleted" class="col-md-3">
+                        <label for="lastname">Expected Date</label>
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="ddMMyyyy" ng-model="educationinfo.expectedGraduation" is-open="popuped.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" ui-mask="99.99.9999" ui-mask-placeholder ui-mask-placeholder-char="_" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="opened()"><i class="icon-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <div class="md-checkbox">
+                            <input type="checkbox" id="notcompleted" ng-model="notcompleted" class="md-check">
+                            <label for="notcompleted">
+                                <span></span>
+                                <span class="check"></span>
+                                <span class="box"></span> Not Completed
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="col-md-3 col-md-offset-3">
+                            <a class="btn btn-primary" ng-click="save()">Save</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class=" btn btn-danger" ui-sref="jdashboard.profile">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</div>   

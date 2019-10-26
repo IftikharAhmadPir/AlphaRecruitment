@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4156422-2684-4222-95C2-4B9AE4CBA7E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ORS.Web</RootNamespace>
+    <AssemblyName>ORS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\controllers\associateController.js" />
+    <Content Include="app\controllers\ApplicantController.js" />
+    <Content Include="app\controllers\JobController.js" />
+    <Content Include="app\controllers\EmployerController.js" />
+    <Content Include="app\controllers\homeController.js" />
+    <Content Include="app\controllers\indexController.js" />
+    <Content Include="app\controllers\loginController.js" />
+    <Content Include="app\controllers\refreshController.js" />
+    <Content Include="app\controllers\changePassword.js" />
+    <Content Include="app\controllers\resetController.js" />
+    <Content Include="app\controllers\signupController.js" />
+    <Content Include="app\controllers\tokensManagerController.js" />
+    <Content Include="app\directives.js" />
+    <Content Include="app\app.js" />
+    <Content Include="content\slider\images\bg1.jpg" />
+    <Content Include="content\slider\images\bg2.jpg" />
+    <Content Include="content\slider\images\bg3.jpg" />
+    <Content Include="content\slider\images\bg4.jpg" />
+    <Content Include="content\slider\images\bg5.jpg" />
+    <Content Include="content\slider\images\bg6.jpg" />
+    <Content Include="content\slider\images\bg7.jpg" />
+    <Content Include="content\slider\images\bg8.jpg" />
+    <Content Include="content\slider\images\bg9.jpg" />
+    <Content Include="content\slider\images\digital-company.png" />
+    <Content Include="content\slider\images\hint1-blue.png" />
+    <Content Include="content\slider\images\hint1-green.png" />
+    <Content Include="content\slider\images\hint1-orange.png" />
+    <Content Include="content\slider\images\hint1-red.png" />
+    <Content Include="content\slider\images\hint2-blue.png" />
+    <Content Include="content\slider\images\hint2-green.png" />
+    <Content Include="content\slider\images\hint2-orange.png" />
+    <Content Include="content\slider\images\hint2-red.png" />
+    <Content Include="content\slider\images\ipad.png" />
+    <Content Include="content\slider\images\ipadmini.png" />
+    <Content Include="content\slider\images\iphone.png" />
+    <Content Include="content\slider\images\iphone_large.png" />
+    <Content Include="content\slider\images\iphone_left.png" />
+    <Content Include="content\slider\images\iphone_right.png" />
+    <Content Include="content\slider\images\logo1.png" />
+    <Content Include="content\slider\images\mac.png" />
+    <Content Include="content\slider\images\macbook.png" />
+    <Content Include="content\slider\images\man-exploring.png" />
+    <Content Include="content\slider\images\man-winner.png" />
+    <Content Include="content\slider\images\man-winnerold.png" />
+    <Content Include="content\slider\images\pointman.png" />
+    <Content Include="content\slider\images\video-confrence.png" />
+    <Content Include="app\services\applicantService.js" />
+    <Content Include="app\services\catalogueService.js" />
+    <Content Include="app\services\employerService.js" />
+    <Content Include="app\services\countriesService.js" />
+    <Content Include="app\services\cookieService.js" />
+    <Content Include="app\services\validationService.js" />
+    <Content Include="app\services\_ServicesReference.js" />
+    <Content Include="app\views\admin\adashboard.html" />
+    <Content Include="app\views\changepassword.html" />
+    <Content Include="app\views\employer\cv\applicantcv.html" />
+    <Content Include="app\views\employer\interview\interviewresult.html" />
+    <Content Include="app\views\employer\interview\interviewcall.html" />
+    <Content Include="app\views\employer\interview\applicants.html" />
+    <Content Include="app\views\employer\interview\pendinginterviewsappsinfo.html" />
+    <Content Include="app\views\employer\jobapplicants.html" />
+    <Content Include="app\views\employer\applicationsinfo.html" />
+    <Content Include="app\views\employer\home.html" />
+    <Content Include="app\views\employer\shortlisted\shortlistedappsinfo.html" />
+    <Content Include="app\views\jobseeker\addlanguageinfo.html" />
+    <Content Include="app\views\jobseeker\addreferenceinfo.html" />
+    <Content Include="app\views\jobseeker\addmembershipinfo.html" />
+    <Content Include="app\views\jobseeker\addtraininginfo.html" />
+    <Content Include="app\views\jobseeker\addpublicationinfo.html" />
+    <Content Include="app\views\jobseeker\addexperienceinfo.html" />
+    <Content Include="app\views\jobseeker\addeducationinfo.html" />
+    <Content Include="app\views\jobseeker\educationinfo.html" />
+    <Content Include="app\views\jobseeker\home.html" />
+    <Content Include="app\views\jobseeker\appsinfo.html" />
+    <Content Include="app\views\jobseeker\interview\interviewinfo.html" />
+    <Content Include="app\views\jobseeker\jobsinfo.html" />
+    <Content Include="app\views\jobseeker\languageinfo.html" />
+    <Content Include="app\views\jobseeker\traininginfo.html" />
+    <Content Include="app\views\jobseeker\referenceinfo.html" />
+    <Content Include="app\views\jobseeker\publicationinfo.html" />
+    <Content Include="app\views\jobseeker\membershipinfo.html" />
+    <Content Include="app\views\jobseeker\experienceinfo.html" />
+    <Content Include="app\views\jobseeker\personalinfo.html" />
+    <Content Include="app\views\jobseeker\addpersonalinfo.html" />
+    <Content Include="app\views\jobseeker\userprofile.html" />
+    <Content Include="app\views\employer\empjoblist.html" />
+    <Content Include="app\views\employer\postjob.html" />
+    <Content Include="app\views\employer\empdata.html" />
+    <Content Include="app\views\jobseeker\jdashboard.html" />
+    <Content Include="app\views\admin\home.html" />
+    <Content Include="app\views\forgetpassword.html" />
+    <Content Include="app\views\slider.html" />
+    <Content Include="app\views\tpl\a\sidebar.html" />
+    <Content Include="app\views\tpl\j\sidebar.html" />
+    <Content Include="content\slider\assets\arrowleft.png" />
+    <Content Include="content\slider\assets\arrowright.png" />
+    <Content Include="content\slider\assets\arrow_large_left.png" />
+    <Content Include="content\slider\assets\arrow_large_right.png" />
+    <Content Include="content\slider\assets\arrow_left.png" />
+    <Content Include="content\slider\assets\arrow_left2.png" />
+    <Content Include="content\slider\assets\arrow_right.png" />
+    <Content Include="content\slider\assets\arrow_right2.png" />
+    <Content Include="content\slider\assets\black50.png" />
+    <Content Include="content\slider\assets\boxed_bgtile.png" />
+    <Content Include="content\slider\assets\bullet.png" />
+    <Content Include="content\slider\assets\bullets.png" />
+    <Content Include="content\slider\assets\bullets2.png" />
+    <Content Include="content\slider\assets\bullet_boxed.png" />
+    <Content Include="content\slider\assets\coloredbg.png" />
+    <Content Include="content\slider\assets\grain.png" />
+    <Content Include="content\slider\assets\gridtile.png" />
+    <Content Include="content\slider\assets\gridtile_3x3.png" />
+    <Content Include="content\slider\assets\gridtile_3x3_white.png" />
+    <Content Include="content\slider\assets\gridtile_white.png" />
+    <Content Include="content\slider\assets\large_left.png" />
+    <Content Include="content\slider\assets\large_right.png" />
+    <Content Include="content\slider\assets\loader.gif" />
+    <Content Include="content\slider\assets\loader2.gif" />
+    <Content Include="content\slider\assets\navigdots.png" />
+    <Content Include="content\slider\assets\navigdots_bgtile.png" />
+    <Content Include="content\slider\assets\shadow1.png" />
+    <Content Include="content\slider\assets\shadow2.png" />
+    <Content Include="content\slider\assets\shadow3.png" />
+    <Content Include="content\slider\assets\small_left.png" />
+    <Content Include="content\slider\assets\small_left_boxed.png" />
+    <Content Include="content\slider\assets\small_right.png" />
+    <Content Include="content\slider\assets\small_right_boxed.png" />
+    <Content Include="content\slider\assets\timer.png" />
+    <Content Include="content\slider\assets\timerdot.png" />
+    <Content Include="content\slider\assets\transparent.jpg" />
+    <Content Include="content\slider\assets\white50.png" />
+    <Content Include="content\css\bootstrap-fileinput.css" />
+    <Content Include="content\slider\js\jquery.fancybox.pack.js" />
+    <Content Include="content\slider\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="content\slider\js\jquery.themepunch.revolution.js" />
+    <Content Include="content\slider\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="content\slider\js\jquery.themepunch.tools.min.js" />
+    <Content Include="content\slider\js\layout.js" />
+    <Content Include="content\slider\js\owl.carousel.min.js" />
+    <Content Include="content\slider\js\revo-slider-init.js" />
+    <Content Include="content\slider\css\settings.css" />
+    <Content Include="content\slider\css\style-revolution-slider.css" />
+    <Content Include="scripts\bootstrap-fileinput.js" />
+    <Content Include="content\css\loading-bar.css" />
+    <Content Include="content\images\logo.png" />
+    <Content Include="content\select.css" />
+    <Content Include="content\select.js" />
+    <Content Include="content\css\select.min.css" />
+    <Content Include="scripts\corejs\jquery.min1.js" />
+    <Content Include="scripts\select.min.js" />
+    <Content Include="scripts\angular-pnotify.js" />
+    <Content Include="scripts\angularjs\angular-aria.js" />
+    <Content Include="scripts\angularjs\angular-aria.min.js" />
+    <Content Include="scripts\angularjs\angular-datepicker.js" />
+    <Content Include="scripts\angularjs\angular-datepicker.min.js" />
+    <Content Include="scripts\angularjs\angular-message-format.js" />
+    <Content Include="scripts\angularjs\angular-message-format.min.js" />
+    <Content Include="scripts\angularjs\angular-messages.js" />
+    <Content Include="scripts\angularjs\angular-messages.min.js" />
+    <Content Include="scripts\loading-bar.js" />
+    <Content Include="app\services\angular-local-storage.min.js" />
+    <Content Include="app\services\authInterceptorService.js" />
+    <Content Include="app\services\authService.js" />
+    <Content Include="app\services\tokensManagerService.js" />
+    <Content Include="app\views\extra\associate.html" />
+    <Content Include="app\views\employer\cdashboard.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\login.html" />
+    <Content Include="app\views\extra\countries.html" />
+    <Content Include="app\views\extra\refresh.html" />
+    <Content Include="app\views\signup.html" />
+    <Content Include="app\views\extra\tokens.html" />
+    <Content Include="app\views\tpl\footer.html" />
+    <Content Include="app\views\tpl\header.html" />
+    <Content Include="app\views\tpl\page-head.html" />
+    <Content Include="app\views\tpl\c\sidebar.html" />
+    <Content Include="app\views\extra\authComplete.html" />
+    <Content Include="content\css\bootstrap-switch.min.css" />
+    <Content Include="content\css\bootstrap.css" />
+    <Content Include="content\css\bootstrap.min.css" />
+    <Content Include="content\css\components-md.min.css" />
+    <Content Include="content\css\font-awesome\css\font-awesome.css" />
+    <Content Include="content\css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="content\css\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="content\css\layout.min.css" />
+    <Content Include="content\css\light.min.css" />
+    <Content Include="content\css\plugins-md.min.css" />
+    <Content Include="content\css\search.min.css" />
+    <Content Include="content\css\simple-line-icons\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="content\css\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="content\css\simple-line-icons\icons-lte-ie7.js" />
+    <Content Include="content\css\simple-line-icons\License.txt" />
+    <Content Include="content\css\simple-line-icons\Readme.txt" />
+    <Content Include="content\css\simple-line-icons\simple-line-icons.css" />
+    <Content Include="content\css\uniform.default.css" />
+    <Content Include="content\fonts\fontawesome-webfont.svg" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\fonts\fontawesome-webfont.eot" />
+    <Content Include="content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\fonts\fontawesome-webfont.woff" />
+    <Content Include="content\fonts\FontAwesome.otf" />
+    <Content Include="content\css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="content\css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="content\css\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="content\css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="content\css\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="content\css\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="content\css\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="app\views\country\delete.html" />
+    <Content Include="app\views\country\edit.html" />
+    <Content Include="content\css\font-awesome\less\animated.less" />
+    <Content Include="content\css\font-awesome\less\bordered-pulled.less" />
+    <Content Include="content\css\font-awesome\less\core.less" />
+    <Content Include="content\css\font-awesome\less\fixed-width.less" />
+    <Content Include="content\css\font-awesome\less\font-awesome.less" />
+    <Content Include="content\css\font-awesome\less\icons.less" />
+    <Content Include="content\css\font-awesome\less\larger.less" />
+    <Content Include="content\css\font-awesome\less\list.less" />
+    <Content Include="content\css\font-awesome\less\mixins.less" />
+    <Content Include="content\css\font-awesome\less\path.less" />
+    <Content Include="content\css\font-awesome\less\rotated-flipped.less" />
+    <Content Include="content\css\font-awesome\less\screen-reader.less" />
+    <Content Include="content\css\font-awesome\less\stacked.less" />
+    <Content Include="content\css\font-awesome\less\variables.less" />
+    <Content Include="content\css\font-awesome\scss\font-awesome.scss" />
+    <Content Include="content\css\font-awesome\scss\_animated.scss" />
+    <Content Include="content\css\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="content\css\font-awesome\scss\_core.scss" />
+    <Content Include="content\css\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="content\css\font-awesome\scss\_icons.scss" />
+    <Content Include="content\css\font-awesome\scss\_larger.scss" />
+    <Content Include="content\css\font-awesome\scss\_list.scss" />
+    <Content Include="content\css\font-awesome\scss\_mixins.scss" />
+    <Content Include="content\css\font-awesome\scss\_path.scss" />
+    <Content Include="content\css\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="content\css\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="content\css\font-awesome\scss\_stacked.scss" />
+    <Content Include="content\css\font-awesome\scss\_variables.scss" />
+    <Content Include="content\slider\assets\arrows.psd" />
+    <Content Include="content\slider\assets\bullets.psd" />
+    <Content Include="content\slider\assets\small_arrows.psd" />
+    <None Include="Properties\PublishProfiles\ngauthenticationweb.pubxml" />
+    <Content Include="index.html" />
+    <Content Include="scripts\angularjs\angular-animate.min.js.map" />
+    <Content Include="scripts\angularjs\angular-cookies.min.js.map" />
+    <Content Include="scripts\angularjs\angular-loader.min.js.map" />
+    <Content Include="scripts\angularjs\angular-resource.min.js.map" />
+    <Content Include="scripts\angularjs\angular-route.min.js.map" />
+    <Content Include="scripts\angularjs\angular-sanitize.min.js.map" />
+    <Content Include="scripts\angularjs\angular-touch.min.js.map" />
+    <Content Include="scripts\angularjs\angular.min.js.map" />
+    <Content Include="scripts\angularjs\jquery-2.0.3.min.map" />
+    <None Include="Properties\PublishProfiles\ORS.Web.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\images\sidebar-toggle-light.png" />
+    <Content Include="scripts\angular-local-storage.min.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\angularjs\angular-animate.js" />
+    <Content Include="scripts\angularjs\angular-animate.min.js" />
+    <Content Include="scripts\angularjs\angular-cookies.js" />
+    <Content Include="scripts\angularjs\angular-cookies.min.js" />
+    <Content Include="scripts\angularjs\angular-csp.css" />
+    <Content Include="scripts\angularjs\angular-loader.js" />
+    <Content Include="scripts\angularjs\angular-loader.min.js" />
+    <Content Include="scripts\angularjs\angular-mocks.js" />
+    <Content Include="scripts\angularjs\angular-resource.js" />
+    <Content Include="scripts\angularjs\angular-resource.min.js" />
+    <Content Include="scripts\angularjs\angular-route.js" />
+    <Content Include="scripts\angularjs\angular-route.min.js" />
+    <Content Include="scripts\angularjs\angular-sanitize.js" />
+    <Content Include="scripts\angularjs\angular-sanitize.min.js" />
+    <Content Include="scripts\angularjs\angular-scenario.js" />
+    <Content Include="scripts\angularjs\angular-touch.js" />
+    <Content Include="scripts\angularjs\angular-touch.min.js" />
+    <Content Include="scripts\angularjs\angular-ui-router.js" />
+    <Content Include="scripts\angularjs\angular-ui-router.min.js" />
+    <Content Include="scripts\angularjs\angular.js" />
+    <Content Include="scripts\angularjs\angular.min.js" />
+    <None Include="scripts\angularjs\jquery-2.0.3.intellisense.js" />
+    <Content Include="scripts\angularjs\jquery-2.0.3.js" />
+    <Content Include="scripts\angularjs\jquery-2.0.3.min.js" />
+    <Content Include="scripts\angularjs\ocLazyLoad.min.js" />
+    <Content Include="scripts\angularjs\ui-bootstrap-tpls.min.js" />
+    <Content Include="scripts\authComplete.js" />
+    <Content Include="scripts\corejs\analytics.js" />
+    <Content Include="scripts\corejs\angular-local-storage.min.js" />
+    <Content Include="scripts\corejs\browser-support.js" />
+    <Content Include="scripts\corejs\authComplete.js" />
+    <Content Include="scripts\corejs\bootstrap-hover-dropdown.min.js" />
+    <Content Include="scripts\corejs\bootstrap-switch.min.js" />
+    <Content Include="scripts\corejs\bootstrap.min.js" />
+    <Content Include="scripts\corejs\demo.js" />
+    <Content Include="scripts\corejs\jquery-migrate.min.js" />
+    <Content Include="scripts\corejs\jquery.blockui.min.js" />
+    <Content Include="scripts\corejs\jquery.cookie.min.js" />
+    <Content Include="scripts\corejs\jquery.min.js" />
+    <Content Include="scripts\corejs\jquery.slimscroll.min.js" />
+    <Content Include="scripts\corejs\jquery.uniform.min.js" />
+    <Content Include="scripts\corejs\layout.min.js" />
+    <Content Include="scripts\corejs\loading-bar.min.js" />
+    <Content Include="scripts\corejs\quick-sidebar.min.js" />
+    <Content Include="scripts\mask.js" />
+    <Content Include="scripts\mask.min.js" />
+    <Content Include="scripts\moment.min.js" />
+    <Content Include="scripts\pnotify.min.css" />
+    <Content Include="scripts\pnotify.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32176</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32176/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
